@@ -1,0 +1,368 @@
+/*==============================================================
+           Common CSS
+================================================================*/
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+*{
+    box-sizing: border-box;
+}
+header,
+section{
+    overflow: hidden;
+}
+
+:root {
+    --Sniglet-font: "Sniglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "lobster", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+    --light-gray: rgba(255, 255, 255, 0.877);
+  }
+
+/*==============================================================
+           Header Area CSS
+================================================================*/
+header{
+    background: #dd2476;
+    background: var(--bggradient)
+}
+
+header a{
+    font-family: var(--snigle-font);
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+  header .nav-item:last-child {
+    padding-right: 10.5em;
+}
+  
+  header .nav-item {
+    padding: 0.9em;
+}
+  
+  header .navbar-brand {
+    padding-left: 8rem;
+}
+
+header .nav-link:hover {
+    color: black;
+}
+
+header .row .col-md-5{
+    padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-7{
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+    font-family: var(--Rubik);
+    color: white;
+}
+
+header .row .col-md-5 img{
+    width: 90%;
+}
+
+header .container .col-md-7 h6{
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+    font-size: 5.5vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p{
+    padding: 1vmin 5vmin;
+}
+
+header .container .col-md-7 button{
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/*==============================================================
+           Section_1 Area CSS
+================================================================*/
+.section_1{
+    padding: 20vmin 0;
+}
+
+.section_1 .row .col-md-6 .pray img{
+    /* opacity: 0.8; */
+    width: 80%;
+    border-radius: 0.2em;
+}
+
+.section_1 .row .col-md-6:last-child{
+    position: relative;
+}
+
+.section_1 .row .col-md-6 .panel{
+    position: absolute;
+    top: 6vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 10vmin 5vmin 16vmin 8vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Rubik);
+    z-index: 1;
+}
+
+.section_1 .row .col-md-6 .panel h2{
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+}
+
+.section_1 .row .col-md-6 .panel p{
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/*==============================================================
+           Section_2 Area CSS
+================================================================*/
+.cover{
+    width: 100%;
+    height: 55vmin;
+    background: url(img/pexels-photo-452738.jpeg);
+    background-position: -24rem -24rem;
+    background-size: 150%;
+    position: relative;
+}
+
+.cover .content{
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    padding-top: 19vmin;
+}
+
+.cover .content >h2{
+    font-family: var(--Patua);
+    font-size: 6vmin;
+    color: whitesmoke;
+}
+
+.cover .content>p{
+    font-family: var(--Rubik);
+    font-size: 2vmin;
+    color: #e5e5e5;
+}
+
+.numbers .rect{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+}
+
+.numbers{
+    margin-top: -12vmin;
+}
+.numbers .rect h2{
+    font-size: 4rem;
+    color: tomato;
+}
+
+.numbers .rect p{
+    font-family: var(--Patua);
+}
+
+.Purchase >h2{
+    padding-top: 15vmin;
+    padding-bottom: 0.1em;
+    font-family: var(--Lobster);
+}
+
+.Purchase >p{
+    color: var(--light-black);
+    font-size: 3vmin;
+    padding-bottom: 10vmin;
+}
+
+.Purchase .cards .card{
+    width: 22rem;
+    margin: 3vmin;
+}
+
+.cards div{
+    padding: 0;
+    margin: 0;
+} 
+
+.cards .title{
+    background: rgba(208, 241, 241, 0.199);
+    padding: 1.4rem 2.5rem;
+    font-size: 2vmin;
+}
+
+.cards .card-text{
+    padding: 2.5rem 3rem;
+    color: var(--light-black);
+}
+
+.card-body .pricing{
+    background: rgba(208, 241, 241, 0.199);
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+}
+
+.card-body .pricing >h2{
+    font-size: 8vmin;
+    padding: 1em 0.5em;
+}
+
+/*==============================================================
+           Section_3 Area CSS
+================================================================*/
+.section_3{
+    height: 70vmin;
+    margin-top: 15vmin;
+    background: var(--bggradient);
+}
+
+.section_3 .col-md-12 >h2{
+    padding: 2em 0 0.5em 0;
+    color: whitesmoke;
+    font-size: 5vmin;
+}
+
+.section_3 .col-md-12 >p{
+    padding: 0 4em;
+    padding-bottom: 2em;
+    color: var(--light-gray);
+    font-size: 2.5vmin;
+}
+
+.section_3 .desktop{
+    background: white;
+    display: inline-block;
+    border-radius: 3em;
+    padding: 1vmin 2.5vmin;
+    margin: 1em;
+}
+
+.section_3 .desktop h3{
+    font-size: 3vmin;
+}
+
+.section_3 .desktop p{
+    font-size: 1.5vmin;
+}
+
+/*==============================================================
+           Section_4 Area CSS
+================================================================*/
+.section_4 .container h2{
+    font-size: 6vmin;
+    padding-top: 14vmin;
+}
+.section_4 .team{
+    padding: 10vmin 4vmin;
+}
+
+.section_4 .card{
+    width: 22rem;
+    margin-top: 5vmin;
+}
+
+.section_4 .card .card-text{
+    padding: 0.5em;
+}
+
+.section_4 .card .card-body >a{
+    font-size: 1.4em;
+}
+
+.section_4 .carousel-item{
+    padding-left: 3rem;
+}
+
+.border_radius{
+    border-radius: 340px;
+    width: 60%;
+}
+
+/*==============================================================
+           Footer Area CSS
+================================================================*/
+footer{
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+
+footer p >span{
+   color: #ff512f;
+}
+
+footer input{
+    border: none !important;
+}
+
+footer input::placeholder{
+    color: white !important;
+}
+
+footer .input-group .input-group-text{
+    background: var(--bggradient);
+    border: none;
+}
+
+footer .column i{
+    color: #dd2476;
+}
+
+footer .column i + i{
+    padding: 0 0.5em;
+}
+
+/*==============================================================
+            Sticky Class CSS
+================================================================*/
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+    z-index: 999;
+    transition: all 1.5s ease;
+}

@@ -1,0 +1,112 @@
+/*============================================
+  Tablet layout
+==============================================*/
+
+@media only screen and (min-width:200px) and (max-width:991px){
+
+    header .navbar-brand {
+        padding-left: 1rem;
+    }
+
+    header .row .col-md-7 {
+        padding: 10vmin 1vmin 22vmin 1vmin;
+    }
+
+    .section_1 {
+        padding: 10vmin 0;
+    }
+
+    .section_1 .row .col-md-6 .panel {
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+
+    .section_2 .cover{
+        background-position: -25vmin -10vmin;
+    }
+
+    .numbers .rect {
+        width: 10rem;
+        height: 8rem;
+    }
+
+    .numbers .rect h1 {
+        font-size: 2rem;
+    }
+
+    .section_3 {
+        height: initial;
+        padding: 10vmin !important;
+        margin-top: 5vmin;
+    }
+
+    .section_3 .col-md-12 > h1 {
+        padding: 6vmin 4vmin;
+        font-size: 4vmin;
+    }
+
+    .section_3 .row .col-md-6{
+        text-align: center !important;
+    }
+
+    .section_3 .desktop i{
+        font-size: 5vmin;
+    }
+
+    .section_4 .carousel-item{
+        padding-left: 0.6rem;
+    }
+
+    .section_4 .team{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .section_4 .carousel-inner{
+        width: 24rem;
+    }
+
+    footer {
+        padding: 10vmin 10vmin;
+    }
+
+    footer .column i{
+        display: block;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+
+}
+
+/*============================================
+  Mobile layout
+==============================================*/
+
+@media only screen and (min-width:200px) and (max-width:480px){
+
+    footer .row .col-md-2{
+        margin-top: 8vmin;
+    }
+    
+    footer .column i{
+        display: inline-block;
+        text-align: left;
+    }
+
+}
+
+
+@media only screen and (min-width:200px) and (max-width:480px){
+
+    .section_4 .card{
+        width: 18rem;
+    }
+
+    .section_4 .carousel-inner{
+        margin-left: -14vmin;
+    }
+}
